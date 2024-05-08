@@ -1,0 +1,232 @@
+body{ 
+    background: linear-gradient(to left, #1b263b, #263653, #354b74, #405986,#486092, #405986, #354b74, #263653, #1b263b);
+}
+
+header {
+    background-color: #0d1b2a;
+    padding: 0.6em 0;
+}
+
+h1 {
+    font-size: clamp(14px, 2.5vw, 20px);
+    text-align: center;
+    word-spacing: 10px;
+    font-family: 'AR One Sans', sans-serif;
+    font-weight: bold;
+    color: #e0e1dd;
+}
+
+h2 {
+    margin-bottom: 3vw;
+    padding: 1em 0; 
+    background: linear-gradient(to left, #48586d, #778da9, #5e7594);
+    box-shadow:  #3c4b5e 1px 5px 5px;
+}
+
+h2 p {
+    margin: 0 3%;
+    text-align: center;
+    color: #1b263b;
+    font-size: clamp(18px, 3.5vw, 30px);
+}
+
+form {
+    margin: 0 2%;
+}
+
+.form-back {
+    background: linear-gradient(to left, #48586d, #778da9, #5e7594);
+    border-radius: 10px;
+    box-shadow: #383838 1px 1px 10px;
+}
+
+.form-container {
+    display:grid;
+    grid-template-rows: 5em 5em 5em;
+    margin: 0 3%;
+    padding-bottom: 2em;
+    
+}
+
+.form-container div {
+    margin: 1em 0;
+    display: grid;
+    grid-template-rows: 1em 3.5em;
+    grid-template-columns: 10% 90%;
+}
+
+h3 {
+    font-size: clamp(16px, 2.5vw, 20px);
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #000000;
+
+}
+
+.input-decor {
+    background-color: #1b263b;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+    color: #e0e1dd;
+    text-shadow: #424141 1px 1px;
+    box-shadow: #000000 1px 1px 12px;
+}
+
+input {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 0 10px 10px 0;
+    height: 99%;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: #e0e1dd;
+    text-indent: 3vw;
+    font-family: 'AR One Sans', sans-serif;
+    letter-spacing: 2px;
+    background: linear-gradient(to left, #c3c4bf, #bebebb, #b9b9b7);
+    font-size: clamp(16px, 2.5vw, 20px);
+    box-shadow: #383838 1px 1px 10px;
+}
+
+::placeholder {
+    color: #575656;
+}
+
+input:focus{
+    border: solid #1b263b 1px;
+    outline: none;
+}
+
+.number-container {
+    grid-row: 1;
+}
+
+.percentege-container {
+    grid-row: 2;
+}
+
+.repetition-container {
+    grid-row: 3;
+}
+
+.response-back {
+    padding-bottom: 0.5em;
+    background: linear-gradient(to left, #48586d, #778da9, #5e7594);
+    border-radius: 10px;
+    box-shadow: #383838 1px 1px 10px;
+}
+
+.response-container {
+    display:grid;
+    grid-template-rows: 1em 3.5em 1em 5em;
+    margin: 3vw 3%;
+}
+
+#botton {
+    border-radius: 10px;
+    grid-row: 2;
+    background-color: #0d1b2a;
+    border: none;
+    color: #e0e1dd;
+    border: solid 1px #e0e1dd;
+    letter-spacing: 2px;
+    font-size: clamp(16px, 2.5vw, 22px);
+    font-weight: bold;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+#botton:hover{
+    background-color: #415a77;
+    border: solid 2px #0d1b2a;
+}
+
+#botton:active{
+    background-color: #e0e1dd;
+}
+
+#answer {
+    grid-row: 4;
+    background: linear-gradient(to left, #e0e1dd, #bebebb, #bfc0bc);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(16px, 3vw, 26px);
+    text-decoration: underline #808080;
+    box-shadow: #383838 1px 1px 10px;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+footer {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+address {
+    display: grid;
+    grid-template-columns: 25% 65%;
+    grid-template-rows: 2em;
+}
+
+#git {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+}
+
+#link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2;
+    text-indent: 3px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 700px){
+    h2 {
+        margin-bottom: 5vw;
+    }
+
+    form {
+        margin: 0 10%;
+    }
+
+    .form-back{
+        border-radius: 20px;
+    }
+
+    .form-container {
+        margin: 0 6%;
+    }
+
+    .response-container{
+        margin: 3vw 6%;
+    }
+
+    .response-back {
+        border-radius: 20px;
+    }
+} 
+
+
