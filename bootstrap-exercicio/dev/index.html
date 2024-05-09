@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/dev/css/styles.css">
+    <!-- Inclua os scripts JavaScript do Bootstrap (junto com o Popper.js) antes de fechar o body --> 
+</head>
+<body>
+    <section class=".container text-center">
+        <h1>3 colunas 2 linhas</h1>
+        <div class="row">
+            <div class = "col-4">
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPage">Bootstrap</button>
+                
+                    <div class="modal" id="modalPage">
+                        <div class="modal-dialog">
+                            <div class="modal-content">    
+                                <div class="modal-header">
+                                    <h2 class="modal-title">Modal Boostrap</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem qui aliquam itaque culpa necessitatibus odio, illum sapiente, magni omnis iure, totam quas voluptas officia maxime ducimus ex ratione quo esse.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>CARD BOOTSTRAP</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="imgs/perfilbonito.png" alt="imagem" class="img-fluid">
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">card</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
